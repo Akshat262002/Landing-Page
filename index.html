@@ -1,0 +1,215 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta http-equiv="X-UA-Compatible" content="IE=edge">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Document</title>
+  <style>
+    *{
+      margin: 0px;
+      padding: 0px;
+    }
+    .topsection{
+      
+      background-image: url(developer.jpg);
+      background-repeat: no-repeat;
+      background-size: 100% 100%;
+      height: 650px;
+    }
+    .textcontainer{
+      position: relative;
+      top: 150px;
+      left:25%;
+      
+    }
+    .textcontainer h3{
+      color:white;
+      font-size: 30px;
+
+    }
+    .textcontainer h1{
+      color: white;
+      font-size: 50px;
+      font-weight: bolder;
+    }
+    .textcontainer h3 span{
+      font-size: 50px;
+      font-weight: bolder;
+    }
+    .blackbox{
+      background-color: black;
+      color: white;
+      
+    }
+    .blackbox h2{
+      text-align: center;
+      padding-top: 40px;
+      padding-bottom: 40px;
+      font-size: 70px;
+      text-transform: uppercase;
+      font-weight: bolder;
+    }
+    .blackbox h2 span{
+      font-size: 100px;
+    }
+    .work{
+  
+  display: flex;
+  flex-direction: row;
+  justify-content: space-evenly;
+    }
+    .card{
+      margin-top: 30px;
+
+max-width: 300px;
+margin-bottom: 20px;
+
+transition: 0.6s ease-in;
+
+
+    }
+    .card:hover{
+      transform: scale(1.05);
+      transition:  0.6s ease-in;
+    }
+    .card img{
+      max-width: 100%;
+      height: 250px;
+    }
+    .imagecontent h2{
+      padding-top: 10px;
+      text-align: center;
+    }
+    .imagecontent p{
+      padding-top: 10px;
+      padding-left: 20px;
+      padding-bottom: 10px;
+
+    }
+    .bottom{
+      display: flex;
+      flex-direction: row;
+    }
+    .contact{
+     background-color: red;
+     padding: 20px;
+     font-size: 20px;
+    }
+    .about{
+   background-color: green;
+   padding: 20px;
+   font-size: 20px;
+    }
+    .bottom h3{
+      font-size: 40px;
+    }
+footer{
+  background-color: black;
+  color: white;
+  font-size: 30px;
+  text-align: center;
+  padding-top: 20px;
+  padding-bottom: 20px;
+  text-transform: uppercase;
+}
+@media (max-width:770px){
+  .topsection{
+    width: 100%;
+  }
+  .bottom{
+    flex-direction: column;
+  }
+  .work{
+    flex-direction: column;
+    align-items: center;
+  }
+  .blackbox h2{
+    font-size: 30px;
+  }
+  .blackbox h2 span{
+    font-size: 40px;
+  }
+  .bottom h3{
+  font-size: 25px;
+  }
+  .bottom p{
+    font-size: 15px;
+  }
+}
+@media (max-width:480px){
+  .textcontainer h1{
+    font-size: 20px;
+  }
+  .textcontainer h3 span{
+    font-size: 20px;
+  }
+  .textcontainer h3{
+    font-size: 12px;
+  }
+  .textcontainer{
+    position: relative;
+    top: 100px;
+    left: 5%;
+  }
+}
+
+  </style>
+</head>
+<body>
+  <section class="topsection">
+    <div class="textcontainer">
+      <h3><span>Hi</span>,I am Akshat Pandey</h3>
+      <h1>Full Stack Web developer</h1>
+    </div>
+  </section>
+  <section class="blackbox">
+   <h2>Work I can do for <span>you</span></h2>
+  </section>
+  <section class="work">
+    <div class="card">
+      <div class="imagecontainer">
+        <img src="web.jpg" alt="">
+      </div>
+      <div class="imagecontent">
+        <h2>Web developer</h2>
+        <p>Lorem, ipsum dolor sit amet consectetur adipisicing elit. Qui, impedit. Ducimus, asperiores quibusdam sed perspiciatis beatae illum optio vitae aspernatur.</p>
+      </div>
+
+    </div>
+    <div class="card">
+      <div class="imagecontainer">
+        <img src="react.jpg" alt="">
+      </div>
+      <div class="imagecontent">
+        <h2>React Developer</h2>
+        <p>Lorem, ipsum dolor sit amet consectetur adipisicing elit. Qui, impedit. Ducimus, asperiores quibusdam sed perspiciatis beatae illum optio vitae aspernatur.</p>
+      </div>
+
+    </div>
+    <div class="card">
+      <div class="imagecontainer">
+        <img src="node.jpg" alt="">
+      </div>
+      <div class="imagecontent">
+        <h2>Node JS Developer</h2>
+       <p>Lorem, ipsum dolor sit amet consectetur adipisicing elit. Qui, impedit. Ducimus, asperiores quibusdam sed perspiciatis beatae illum optio vitae aspernatur.</p> 
+      </div>
+
+    </div>
+  </section>
+  <section class="bottom">
+    <div class="contact">
+      <h3>Contact Me</h3>
+      <p>Lorem, ipsum dolor sit amet consectetur adipisicing elit. Ratione repudiandae perferendis iste, et maxime sed hic voluptatum ab explicabo, accusantium molestiae quam nemo dolor sequi maiores ipsa neque quos sint.</p>
+    </div>
+    <div class="about">
+     <h3>About Me</h3>
+     <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Deleniti sint accusantium ut, vel illo velit minima totam voluptatum, nihil est, explicabo pariatur eum natus architecto qui! Mollitia deserunt consequatur voluptatum.</p>
+    </div>
+  </section>
+  <footer>
+    Project made by akshat pandey
+  </footer>
+</body>
+</html>
